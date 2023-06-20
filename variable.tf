@@ -23,8 +23,8 @@ variable "tag_name" {
   default     = "my-Terraform_ec2-instance"
 }
 variable "ami_id" {
-  description = "AMI for Ubuntu Ec2 instance"
-  default     = "ami-0022f774911c1d690"
+  description = "AMI for Amazonlinux Ec2 instance"
+  default     = "ami-090e0fc566929d98b"
 }
 
 
