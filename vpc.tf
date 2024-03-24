@@ -50,7 +50,7 @@ resource "aws_route_table_association" "public-subnet-1-route-table-association"
 resource "aws_subnet" "private-subnet-1" {
   vpc_id                  = aws_vpc.vpc.id
   cidr_block              = var.Private_Subnet_1
-  availability_zone       = "ap-south-1c"
+  availability_zone       = "ap-south-1b"
   map_public_ip_on_launch = false
   tags = {
     Name = "private-subnet-1"
