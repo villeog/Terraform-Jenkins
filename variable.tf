@@ -1,11 +1,11 @@
 variable "aws_region" {
   description = "The AWS region to create things in."
-  default     = "us-east-1"
+  default     = "ap-south-1"
 }
 
 variable "key_name" {
   description = " SSH keys to connect to ec2 instance"
-  default     = "dockertest"
+  default     = "testab123"
 }
 
 variable "instance_type" {
@@ -24,7 +24,7 @@ variable "tag_name" {
 }
 variable "ami_id" {
   description = "AMI for Amazonlinux Ec2 instance"
-  default     = "ami-0c0b74d29acd0cd97"
+  default     = "ami-007020fd9c84e18c7"
 }
 
 
