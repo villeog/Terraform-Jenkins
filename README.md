@@ -24,13 +24,21 @@ sudo systemctl start jenkins
 sudo systemctl enable jenkins
 
 Portnumber:
+
 Jenkins 8080
+
 RDP 3389
+
 tomcat 8080
+
 ssh - 22 
+
 dns 53
+
 sonar 9000
+
 nexus 8081
+
 sql 1433
 
 
