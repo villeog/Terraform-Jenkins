@@ -1,3 +1,40 @@
+
+How To Install Jenkins & Terraform on Ubuntu 22.04
+
+Jenkins:
+
+sudo apt install openjdk-11-jre-headless -y
+
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key |sudo gpg --dearmor -o /usr/share/keyrings/jenkins.gpg
+
+sudo sh -c 'echo deb [signed-by=/usr/share/keyrings/jenkins.gpg] http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+sudo apt update
+
+sudo apt install jenkins
+
+sudo systemctl start jenkins.service
+
+
+Terraform:
+
+apt update
+
+wget https://releases.hashicorp.com/terraform/0.14.7/terraform_0.14.7_linux_amd64.zip
+
+apt install unzip
+
+unzip terraform_0.14.7_linux_amd64.zip
+
+mv terraform /usr/local/bin/
+
+terraform -v
+
+
+
+
+
+
 Ansible,Jenkins, Docker & Terraform Installation:
 
 Take amazon-linux-2 instance
